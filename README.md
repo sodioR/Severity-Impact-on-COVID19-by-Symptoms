@@ -1,6 +1,5 @@
 # Researching the severity of COVID-19 based on presenting symptoms using machine learning
-Project for Independent Study with Dr. Wang
-
+Project for Independent Study with Dr. Wang <br>
 Created by Sadia Rahman, Tilina Alzaben
 
 ## Dataset:
