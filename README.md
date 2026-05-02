@@ -10,16 +10,14 @@ This project builds and evaluates machine learning models to predict COVID-19 in
 
 ## Results:
 ### XGBoost Model
-The XGBoost model was selected as the primary predictive model due to its ability to capture complex, non-linear relationships between symptoms and COVID-19 infection status. Unlike a single decision tree, XGBoost builds an ensemble of trees sequentially, where each new tree corrects the errors of the previous ones. This results in a more robust and accurate model, particularly well-suited for structured datasets with binary features like this one.
-
+The XGBoost model was selected as the primary predictive model due to its ability to capture complex, non-linear relationships between symptoms and COVID-19 infection status. Unlike a single decision tree, XGBoost builds an ensemble of trees sequentially, where each new tree corrects the errors of the previous ones. This results in a more robust and accurate model, particularly well-suited for structured datasets with binary features like this one. <br>
 The final XGBoost model achieved an accuracy of 97.1%, with especially strong performance in identifying COVID-positive cases. The model reached a recall of 0.99 for the positive class, meaning it correctly identified nearly all infected individuals while minimizing false negatives. This is critical in a health-related context, where missing a positive case can have significant consequences.
 
 The confusion matrix further reinforces this performance, showing a high number of true positives (871) and a very low number of false negatives (6). While the model produces a small number of false positives (26), this tradeoff is acceptable given the priority of detecting positive cases. Overall, the results demonstrate that XGBoost provides a strong balance of accuracy, sensitivity, and reliability for this classification task.
 <img width="521" height="451" alt="image" src="https://github.com/user-attachments/assets/9db9fae0-96bc-4e72-b95d-7571d6675d5f" />
 
 ### Decision Tree Model
-A Decision Tree classifier was implemented as a baseline model to provide interpretability and insight into how individual features contribute to predictions. Unlike XGBoost, which combines multiple trees, the Decision Tree uses a single tree structure to split the data based on feature values, making it easy to visualize and understand the decision-making process.
-
+A Decision Tree classifier was implemented as a baseline model to provide interpretability and insight into how individual features contribute to predictions. Unlike XGBoost, which combines multiple trees, the Decision Tree uses a single tree structure to split the data based on feature values, making it easy to visualize and understand the decision-making process. <br>
 The Decision Tree achieved an accuracy of 96.3%, which is slightly lower than XGBoost but still demonstrates strong performance. The model effectively captures key decision patterns in the data, using features such as sore throat, travel history, and contact with COVID-positive individuals to guide predictions.
 
 While the Decision Tree performs well, it is more prone to overfitting and less capable of capturing complex interactions between features compared to XGBoost. However, its interpretability makes it valuable for understanding how specific symptoms and conditions influence predictions, providing transparency that more complex models lack.
