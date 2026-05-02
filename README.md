@@ -1,4 +1,8 @@
 # Researching the severity of COVID-19 based on presenting symptoms using machine learning
+Project for Independent Study with Dr. Wang
+
+Created by Sadia Rahman, Tilina Alzaben
+
 ## Dataset:
 [Symptoms and COVID Presence (May 2020 data)](https://www.kaggle.com/datasets/hemanthhari/symptoms-and-covid-presence) <br>
 
